@@ -1,0 +1,2766 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from filesec.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Dec 2022 08:51:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <meta name="csrf-token" content="PUYvO27PggbawYde8ALc9KHAX08iEnyvSeeiZqzK">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="css/images/main.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="css/images/main.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="css/images/main.png">
+        <!-- fontawesome for icons -->
+        <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Custom css files, order matters -->
+        <link rel="stylesheet" href="css/main735f.css?u=1">
+        <title>Filesec.io</title>
+    </head>
+    <body>
+        <div class="body-styling">
+<div class="heading-section">
+<div class="main-img-container">
+    <a href="index.html"><img style="margin-top:15px;" src="css/images/main.png" width="90px" height="120px" alt=""></a>
+</div>
+<div class="social-media">
+    <img src="css/images/twitter.png" width="35px" alt="Twitter"><a target="_blank" style="color:#337ab7;font-size:18px;margin-right:10px;" href="https://twitter.com/mrd0x">mrd0x</a>
+</div>
+<div class="main-title-text">
+Stay up-to-date with the latest file extensions being used by attackers.<br>If you would like to contribute <a class="link" href="contribute.html">click here</a>.
+<br>Theme credits - <a class="link" target="_blank" href="../gtfobins.github.io/index.html">GTFOBins</a> and <a class="link" target="_blank" href="../lolbas-project.github.io/index.html">LOLBAS</a>
+</div>
+<div class="functions-container">
+    <div data-toggle="tooltip" onclick="insertFunctionIntoQuery('+Executable');search();" title="File extension can execute code on the machine" data-placement="bottom" class="functions function-list-styling">
+         <a class="link" href="#">Executable</a>
+    </div>
+    <div data-toggle="tooltip" onclick="insertFunctionIntoQuery('+Script');search();" title="File extension can run scripting languages (e.g.VBScript)" data-placement="bottom" class="functions function-list-styling">
+        <a class="link" href="#">Script</a>
+    </div>
+    <div data-toggle="tooltip" onclick="insertFunctionIntoQuery('+Phishing');search();" title="File extension is commonly used as attachment in email phishing" data-placement="bottom" class="functions function-list-styling">
+        <a class="link" href="#">Phishing</a>
+    </div>
+    <div data-toggle="tooltip" onclick="insertFunctionIntoQuery('+Double Click');search();" title="By default, file extension will run with the intended program when double clicked (Note: may vary by OS)" data-placement="bottom" class="functions function-list-styling">
+        <a class="link" href="#">Double Click</a>        
+    </div>
+    <div data-toggle="tooltip" onclick="insertFunctionIntoQuery('+Macros');search();" title="File extensions related to Microsoft Office that can run macros" data-placement="bottom" class="functions function-list-styling">
+        <a class="link" href="#">Macros</a>
+    </div>
+    <div data-toggle="tooltip" onclick="insertFunctionIntoQuery('+File Archiver');search();" title="File extension combines multiple files into one" data-placement="bottom" class="functions function-list-styling">
+        <a class="link" href="#">File Archiver</a>
+   </div>
+</div>
+</div>
+<div class="extensions-table-container">
+<div class="search-bar">
+    <div class="form-group">
+        <input type="text" onkeyup="search()" class="form-control" id="input" autocomplete="off" placeholder="Search an extension (e.g. exe or .exe) or function (e.g. +executable) or OS (e.g. #windows)">
+    </div>
+</div>
+    <div class="extensions-table">
+        <table id="main-table">
+            <tr>
+              <th>Extension</th>
+              <th>Function</th>
+              <th>OS</th>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="7z.html">.7z</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="a3x.html">.a3x</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="appinstaller.html">.appinstaller</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="applescript.html">.applescript</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="application.html">.application</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="appref-ms.html">.appref-ms</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="appx.html">.appx</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="appxbundle.html">.appxbundle</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="arj.html">.arj</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="asd.html">.asd</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="bat.html">.bat</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="bgi.html">.bgi</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Exploit');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Exploit</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="bz2.html">.bz2</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="cab.html">.cab</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="chm.html">.chm</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="cmd.html">.cmd</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="com.html">.com</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="cpl.html">.cpl</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="cs.html">.cs</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="daa.html">.daa</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="desktopthemepackfile.html">.desktopthemepackfile</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="diagcab.html">.diagcab</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="dll.html">.dll</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="dmg.html">.dmg</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="doc.html">.doc</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="docm.html">.docm</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="dot.html">.dot</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="dotm.html">.dotm</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="eml.html">.eml</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="exe.html">.exe</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="gadget.html">.gadget</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="gz.html">.gz</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="hta.html">.hta</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="htm.html">.htm</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Wndows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Wndows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="html.html">.html</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Wndows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Wndows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="hwpx.html">.hwpx</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="ics.html">.ics</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="img.html">.img</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="iqy.html">.iqy</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="iso.html">.iso</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="jar.html">.jar</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="jnlp.html">.jnlp</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="js.html">.js</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="jse.html">.jse</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="library-ms.html">.library-ms</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="lnk.html">.lnk</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="mam.html">.mam</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="mht.html">.mht</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="mhtml.html">.mhtml</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="mof.html">.mof</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="msc.html">.msc</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="msi.html">.msi</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="msrcincident.html">.msrcincident</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="ocx.html">.ocx</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="odt.html">.odt</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Exploit');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Exploit</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="oxps.html">.oxps</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="pdf.html">.pdf</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="pif.html">.pif</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="pot.html">.pot</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="potm.html">.potm</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="ppa.html">.ppa</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Doubleclick');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Doubleclick</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="ppam.html">.ppam</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Doubleclick');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Doubleclick</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="ppkg.html">.ppkg</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="pps.html">.pps</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="ppsm.html">.ppsm</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="ppt.html">.ppt</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="pptm.html">.pptm</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="ps1.html">.ps1</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="pub.html">.pub</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="py.html">.py</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="pyc.html">.pyc</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="pyo.html">.pyo</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="pyw.html">.pyw</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="pyz.html">.pyz</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="pyzw.html">.pyzw</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('# Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#"> Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="rar.html">.rar</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="reg.html">.reg</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="rtf.html">.rtf</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="scf.html">.scf</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="scpt.html">.scpt</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="scr.html">.scr</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="sct.html">.sct</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="searchConnector-ms.html">.searchConnector-ms</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="service.html">.service</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="settingcontent-ms.html">.settingcontent-ms</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="sh.html">.sh</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="sldm.html">.sldm</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="slk.html">.slk</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="so.html">.so</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="svg.html">.svg</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="tar.html">.tar</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="theme.html">.theme</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="themepack.html">.themepack</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="timer.html">.timer</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="url.html">.url</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="uue.html">.uue</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="vb.html">.vb</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="vbe.html">.vbe</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="vbs.html">.vbs</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="vhd.html">.vhd</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="vhdx.html">.vhdx</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="wbk.html">.wbk</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="website.html">.website</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="wim.html">.wim</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="wiz.html">.wiz</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="ws.html">.ws</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="wsf.html">.wsf</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="wsh.html">.wsh</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="xlam.html">.xlam</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Doubleclick');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Doubleclick</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="xll.html">.xll</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Executable');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Executable</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="xlm.html">.xlm</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="xls.html">.xls</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="xlsb.html">.xlsb</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="xlsm.html">.xlsm</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="xlt.html">.xlt</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="xltm.html">.xltm</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Macros');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Macros</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="xps.html">.xps</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="xsl.html">.xsl</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Script');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Script</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="xz.html">.xz</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="z.html">.z</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                                    <tr class="extension-row hover-effect">
+                <td>
+                    <a class="extension-link" href="zip.html">.zip</a>
+                </td>
+                <td>
+                                <span onclick="insertFunctionIntoQuery('+Phishing');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Phishing</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+Double Click');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Double Click</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('+File Archiver');search();" class="functions function-table-margin">
+                    <a class="link" href="#">File Archiver</a>
+                </span>
+                                </td>
+                
+                <td>
+                                <span onclick="insertFunctionIntoQuery('#Windows');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Windows</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Mac');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Mac</a>
+                </span>
+                                <span onclick="insertFunctionIntoQuery('#Linux');search();" class="functions function-table-margin">
+                    <a class="link" href="#">Linux</a>
+                </span>
+                                </td>
+            </tr>
+                      </table>
+    </div>
+</div>
+
+</div>
+</div>
+    
+        
+
+        <script src="js-scripts/jquery/jquery-3.6.0.min.js"></script>
+        <script src="js-scripts/bootstrap/bootstrap.min.js"></script>
+        <script>
+    $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip({ trigger: "hover" });
+});
+
+function search() {
+    var input = document.getElementById("input");
+    var filter = input.value.toUpperCase();
+    var table = document.getElementById('main-table');
+    var tr = table.getElementsByTagName("tr");
+
+    if(input.value.charAt(0) === "+"){
+        filter = input.value.substring(1).toUpperCase();
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+    else if(input.value.charAt(0) === "#"){
+        filter = input.value.substring(1).toUpperCase();
+        for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[2];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+        }
+    }
+    else {
+        for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+    }
+}
+
+function insertFunctionIntoQuery(text){
+    document.getElementById("input").value = text;
+}
+</script>
+    
+    </body>
+
+<!-- Mirrored from filesec.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Dec 2022 08:51:47 GMT -->
+</html>

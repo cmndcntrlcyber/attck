@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from filesec.io/contribute by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Dec 2022 08:52:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <meta name="csrf-token" content="PUYvO27PggbawYde8ALc9KHAX08iEnyvSeeiZqzK">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="css/images/main.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="css/images/main.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="css/images/main.png">
+        <!-- fontawesome for icons -->
+        <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Custom css files, order matters -->
+        <link rel="stylesheet" href="css/main735f.css?u=1">
+        <title>Filesec.io</title>
+    </head>
+    <body>
+        <div class="body-styling">
+<div></div>
+<h1 style="font-weight: bold"><a href="index.html">..</a> /Contribute</h1>
+<div>Contributions can be made to new or existing file extensions. Example of contributions to existing file extensions can be making the description more accurate, 
+    adding a new file sample, removing broken links etc. To contribute to the Filesec.io project please fill out the form below.</div>
+<div><b>Follow the format precisely.</b></div>
+
+
+<div class="form-container">
+    <form action="https://filesec.io/contribute" method="POST">
+    <input type="hidden" name="_token" value="PUYvO27PggbawYde8ALc9KHAX08iEnyvSeeiZqzK">    <div style="margin-top:25px;" class="submission-type-container form-spacing">
+        <div>Are you submitting a new file extension or modifying an existing one?*</div>
+        <input type="radio" id="new" name="submissiontype" value="new" required>
+        <label for="new">New</label><br>
+        <input type="radio" id="modify" name="submissiontype" value="modify">
+        <label for="modify">Modify (only fill out the required fields & the ones you want to modify)</label><br>
+    </div>
+    <div class="main-info-container form-spacing">
+        <label for="author">Author Name:*</label>
+        <input type="text" class="form-control vertical-spacing form-spacing" name="author" id="author" placeholder="Author name (Format: John Smith - @twitter  OR John Smith)" required>
+        <label for="extension">File Extension:*</label>
+        <input type="text" class="form-control vertical-spacing form-spacing" name="extension" id="extension" placeholder="Extension (Format: exe)" required>
+        <label for="os">Operating System(s):</label>
+        <input type="text" class="form-control vertical-spacing form-spacing" name="os" id="os" placeholder="Operating Systems (Format: windows,mac,linux)">
+    </div>
+    <div class="functions-container form-spacing">
+        <div>Select all the functions that apply:</div>
+        <div class="checkbox">
+            <label><input type="checkbox" name="function[]" value="executable">Executable</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="function[]" value="macros">Macros</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="function[]" value="script">Script</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="function[]" value="phishing">Phishing</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="function[]" value="doubleclick">Double Click</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="function[]" value="filearchiver">File Archiver</label>
+          </div>
+    </div>
+    <div class="description-container form-spacing">
+        <label for="comment">Description:</label>
+        <textarea class="form-control" name="description" placeholder="Include the name of the extension and its purpose and how it can be used by threat actors" rows="5" id="description"></textarea>
+    </div>
+
+    <div class="description-container form-spacing">
+        <label for="recommendation">Recommendation:</label>
+        <textarea class="form-control" name="recommendation" placeholder="Best practices to implement (e.g. whitelist signed EXE files only)" rows="5" id="recommendation"></textarea>
+    </div>
+
+    <div class="resources-container form-spacing">
+        <label for="description">Resources:</label>
+        <textarea class="form-control" name="resources" placeholder="Include links that explain how attackers use the file. Plesase try to avoid news articles. (Format: https://link1.com,https://link2.com)" rows="3" id="description"></textarea>
+    </div>
+
+    <div class="resources-container form-spacing">
+        <label for="filesample">File Sample:</label>
+        <textarea class="form-control" name="filesample" placeholder="Include file samples from VirusTotal, JoeSandbox etc. (Format: https://link1.com,https://link2.com)" rows="3" id="filesample"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary form-spacing">Submit</button>
+    </form>
+</div>
+</div>
+        
+
+        <script src="js-scripts/jquery/jquery-3.6.0.min.js"></script>
+        <script src="js-scripts/bootstrap/bootstrap.min.js"></script>
+            </body>
+
+<!-- Mirrored from filesec.io/contribute by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Dec 2022 08:52:29 GMT -->
+</html>
