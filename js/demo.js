@@ -6,8 +6,8 @@
 // This can be used to set the Particles Effects. Check README for more details!
 document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particles'), {
-    dotColor: '#000000',
-    lineColor: '#000000'
+    dotColor: '#ff6347',
+    lineColor: '#ff6347'
   });
   var main = document.getElementById('main');
   main.style.marginTop = - main.offsetHeight / 2 + 'px';
