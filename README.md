@@ -3,6 +3,8 @@
 # One ATT&CK at a Time Stage
 This is the companion project for staging payloads from [One ATT&CK at a Time](https://github.com/cmndcntrlcyber/one-attck-per-time/tree/main) and executing them to simulate or emulate MITRE's ATT&CKs. 
 
+An example can be found here at [https://attck.pages.dev](https://attck.pages.dev).
+
 ## Usage Procedure
 1. Fork the repository.
 2. Clone the repository to a web server of your choosing.
