@@ -1,3 +1,5 @@
+![attck-favicon](https://github.com/cmndcntrlcyber/one-attck-per-time/assets/47669879/364c55f4-cdc0-4c0a-b715-b2f541900b50)
+
 # One ATT&CK at a Time Stage
 This is the companion project for staging payloads from [One ATT&CK at a Time](https://github.com/cmndcntrlcyber/one-attck-per-time/tree/main) and executing them to simulate or emulate MITRE's ATT&CKs. 
 
