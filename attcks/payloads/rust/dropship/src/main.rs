@@ -6,7 +6,7 @@ use std::process::{Command, Stdio};
 fn generate_encrypted_shellcode() -> Vec<u8> {
 // Generate AES256 key and IV (not shown in this example)
 let key = "ff827540075736f397c113a5edcb5d93".as_bytes();
-let iv = "ff827540075736f397c113a5edcb5d93".as_bytes();
+let iv = "8cJf6yKp5rEaBtDz".as_bytes();
 
 // Encrypt shellcode using AES256
 let encrypted_shellcode = encrypt_using_aes(b"shellcode", key, iv);
