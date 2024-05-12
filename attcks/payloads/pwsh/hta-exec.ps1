@@ -4,4 +4,4 @@
 $htaFilePath = "C:\path\to\your_script.hta" # Replace with the actual path to your HTML Help Authoring Tool (.hta) file
 
 # Execute the HTML Help Script using Windows Script Host 'wscript'
-Start-Process -FilePath "wscript.exe" -ArgumentList $htaFilePath -NoNewWindow -Wait
+Start-Process -FilePath "cscript.exe" -ArgumentList $htaFilePath -NoNewWindow -Wait
