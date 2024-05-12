@@ -48,14 +48,14 @@
     }
     
     .navbar a:hover, .subnav:hover .subnavbtn {
-        background-color: rgb(9, 36, 165);
+        background-color: #8c0000;
     }
     
     .subnav-content {
       display: none;
       position: absolute;
       left: 0;
-      background-color: rgb(9, 36, 165);
+      background-color: #8c0000;
       width: 100%;
       z-index: 1;
     }
@@ -67,7 +67,7 @@
     }
     
     .subnav-content a:hover {
-      background-color: #eee;
+      background-color: #aaa;
       color: black;
     }
     
@@ -92,7 +92,7 @@
     body {
       background-color: rgb(255, 255, 255);
       font-family: 'Montserrat', sans-serif;
-      color: rgb(0, 4, 255);
+      color: #8c0000;
       line-height: 1.3;
       -webkit-font-smoothing: antialiased;
     }
@@ -116,14 +116,14 @@
       background-color: rgb(255, 255, 255, .95);
       font-size: 24px;
       font-weight: bold;
-      color: #00008c;
+      color: #8c0000;
       letter-spacing: 0.05em;
     }
     h2 {
       background-color: rgb(255, 255, 255, .95);
       font-size: 36px;
       font-weight: 120;
-      color: #00008c;
+      color: #8c0000;
       letter-spacing: 0.05em;
       text-align: center;
     }
@@ -138,14 +138,15 @@
     p {
       font-size: 24px;
       background-color: rgb(255, 255, 255, .95);
-      color: #00008c;
+      color: #8c0000;
       font-family: Centaur, Serif;
     }
     
     img {
-      max-width: 100%;
+      max-width: 40%;
+      padding-top: .25%;
       height: auto;
-      width: auto\9; /* for ie8 */
+      width: auto; /* for ie8 */
   }
 
     @media only screen and (max-width: 1000px) {
@@ -192,39 +193,38 @@
     
   </style>
 </head>
-<body>
 <div id = "particles">
 <div id = "main">
   <div class="row">
-   <p><div class="col-xl-8"><div class="img"><img src="assets\attck-banner.png"></div></div></p>
-<nav class="navbar">
+   <p><div class="col-l-8"><div class="img"; style="top: 25%"><img src="assets\attck-banner.png"></div></div></p>
+   <nav class="navbar">
     <div class="container-fluid">
     <ul class="nav navbar-nav">
-    <a href="home.html">Home</a>
+    <a href="https://attck.pages.dev">Home</a>
     <div class="subnav">
       <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
-        <a href="#company">Company</a>
-        <a href="#team">Team</a>
-        <a href="#careers">Careers</a>
+        <a href="#">Company</a>
+        <a href="#">Team</a>
+        <a href="#">Careers</a>
       </div>
     </div> 
     <div class="subnav">
       <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
-        <a href="Intel.html">Intelligence Dashboard</a>
-         <a href="ISPM.html">Information Systems Project Management</a>
-         <a href="C3S.html">Continuous Command & Control</a>
-         <a href="SDLC.html">Secure Development Lifecycle</a>
-         <a href="PIA.html">Privacy Impact Assessment</a>
+        <a href="#">Intelligence Dashboard</a>
+         <a href="#">Information Systems Project Management</a>
+         <a href="#">Continuous Command & Control</a>
+         <a href="#">Secure Development Lifecycle</a>
+         <a href="#">Privacy Impact Assessment</a>
       </div>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
-      <a href="Contact Us.html">Contact Us</a>
-      <a href="Social.html">Social</a>
-      <a href="Forms.html">Forms</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="#">Social</a>
+      <a href="#">Forms</a>
   </div>
 </nav>
   
@@ -233,19 +233,19 @@
     <div class="col-sm-3 sidenav">
       <h3>Public Research</h3>
       <div class="well well-sm">
-      <a href="https://c3s.community">What are these?</a>
+      <a href="#">What are these?</a>
       </div>
       <hr>
       <div class="well well-sm">
-      <a href="https://privitas.us">Privacy</a>
+      <a href="#">Privacy, Compliance, & Governance</a>
       </div>
       <hr>
       <div class="well well-sm">
-      <a href="https://attck.community">ATT&CK</a>
+      <a href="https://cmndcntrl.notion.site/ATT-CK-TTP-Database-82388bfa18a6411c8bdf844a7880bc6b">ATT&CK TTP Database</a>
       </div>
       <hr>
       <div class="well well-sm">
-      <a href="https://d3fend.community">D3FEND</a>
+      <a href="#">D3FEND TTP Database</a>
       </div>
       <hr>
     </div>
@@ -255,36 +255,72 @@
         <div class="row">
           <div class="col-4 text-center">
             <div class="well well-sm">
-              <a href="https://attck.community/attck/gtfobins.github.io/">GTFOBins</a>
+              <a href="https://cmndcntrl.notion.site/Red-Team-Resources-6f818e9fdc3f4267bc726b0808c8a3aa?pvs=4">ATT&CK Community Red Team Resources</a>
+            </div>
+            <p>The projects below are not my own, but are the works of exceptionally talented security professionals.</p>
+            <hr>
+          <div class="row">
+          <div class="col-4 text-center">
+            <div class="well well-sm">
+              <a href="https://filesec.io/">Filesec</a>
+            </div>
+            <div class="col-4 text-center">
+              <div class="well well-sm">
+                <a href="https://lots-project.com/">LOTS-Project</a>
+              </div>
+            <div class="col-4 text-center">
+              <div class="well well-sm">
+                <a href="https://malapi.io/">MalAPI</a>
+              </div>
+              <hr>
+            <div class="col-4">
+              <div class="col-4 text-center">
+                <div class="well well-sm">
+                  <a href="https://lolol.farm/">Living Off the Living Off the Land</a>
+                </div>
+              </div>
             </div>
             <hr>
-          <div class="col-4 text-center">
-            <div class="well well-sm">
-              <a href="https://attck.community/attck/filesec.io/">Filesec</a>
-            </div>
-          <div class="col-4 text-center">
-            <div class="well well-sm">
-              <a href="https://attck.community/attck/lolbas-project.github.io/">LOLBAS</a>
-            </div>
-            <hr>  
-          <div class="row">
-            <div class="col-4 text-center">
-              <div class="well well-sm">
-                <a href="https://attck.community/attck/lots-project.com/">LOTS-Project</a>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="col-4 text-center">
+                  <div class="well well-sm">
+                    <a href="https://wadcoms.github.io/">WADComs</a>
+                  </div>
+                </div>
+                <div class="col-4 text-center">
+                  <div class="well well-sm">
+                    <a href="https://lolbas-project.github.io/">LOLBAS</a>
+                  </div>
+                </div>
               </div>
-              <hr>
-            <div class="col-4 text-center">
-              <div class="well well-sm">
-                <a href="https://attck.community/attck/malapi.io/">MalAPI</a>
+              <div class="col-sm-4">
+                <div class="col-4 text-center">
+                  <div class="well well-sm">
+                    <a href="https://gtfobins.github.io/">GTFOBins</a>
+                  </div>
+                </div>
+                <div class="col-4 text-center">
+                  <div class="well well-sm">
+                    <a href="https://www.loldrivers.io/">LOLDrivers</a>
+                  </div>
+                </div>
               </div>
-            <div class="col-4 text-center">
-              <div class="well well-sm">
-                <a href="https://attck.community/attck/wadcoms.github.io/">WADComs</a>
+              <div class="col-sm-4">
+                <div class="col-4 text-center">
+                  <div class="well well-sm">
+                    <a href="https://arttoolkit.github.io/">ARTToolkit</a>
+                  </div>
+                </div>
+                <div class="col-4 text-center">
+                  <div class="well well-sm">
+                    <a href="https://br0k3nlab.com/LoFP/">LoFP</a>
+                  </div>
+                </div>
               </div>
-              <hr>
             </div>
-          </div>
-          <hr>
+            <p style="font-size: x-small;">This is not an official product of MITRE, nor does it represent the activities and operations of MITRE</p>
+        </div>
         </div>
     </div>
     </div>
