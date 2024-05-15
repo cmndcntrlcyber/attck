@@ -5,6 +5,14 @@ This is the companion project for staging payloads from [One ATT&CK at a Time](h
 
 An example can be found here at [https://attck.pages.dev](https://attck.pages.dev).
 
+## ATT&CK's
+### [TA0042: Resource Development](https://github.com/cmndcntrlcyber/one-attck-per-time/blob/main/TA0042/Resource%20Development.md)
+#### [T1587.004: Develop Exploits](https://github.com/cmndcntrlcyber/attck/tree/main/attcks/T1587.004)
+#### [T1608: Stage Capabilities](https://github.com/cmndcntrlcyber/attck/tree/main/attcks/T1608)
+
+# Disclaimer
+**One 'ATT&CK' at a Time** is developed for educational purposes only. Neither the creators nor contributors of **One 'ATT&CK' at a Time** are responsible for any misuse of these resources. The resources provided should not be used in any unauthorized or illegal manner. Always ensure ethical and legal use of the tools and techniques provided here.
+
 ## Usage Procedure
 1. Fork the repository.
 2. Clone the repository to a web server of your choosing.
