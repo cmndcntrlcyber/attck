@@ -355,7 +355,7 @@ __        ___       ____
  \ \ /\ / /| | '_ \| |_) \ \ /\ / | '_ \ 
   \ V  V / | | | | |  __/ \ V  V /| | | |
    \_/\_/  |_|_| |_|_|     \_/\_/ |_| |_|
-   --> ADIDNS menu @S3cur3Th1sSh1t
+   --> ADIDNS menu 
 '@
             Write-Host "================ WonTonPlatypus ================"
             Write-Host -ForegroundColor Green '1. Add ADIDNS Node! '
