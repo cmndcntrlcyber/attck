@@ -26,3 +26,8 @@ Contributions, suggestions, and feedback are welcome. Please create an issue or 
 3. Make your changes and commit them.
 4. Push your changes to your forked repository.
 5. Open a pull request in the main repository.
+
+## To Do
+[] Create delivery system to execute through a child browser thread
+[] Create Bookmark structure to replicate ATT&CK TTPs
+[] Create clickable bookmark-based ATT&CK delivery system 
