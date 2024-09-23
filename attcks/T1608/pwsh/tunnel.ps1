@@ -1,6 +1,6 @@
 # NOTE: This script assumes that you have legal authorization to perform such actions on a remote machine. Unauthorized access will violate laws.
 
-$remoteComputer = "192.168.1.10" # The IP address of the target device
+$remoteComputer = "" # The IP address of the target device
 
 # Create an anonymous reverse SSH tunnel (for educational purposes only)
 # Please note this does not establish a full command prompt environment and is highly unconventional.
