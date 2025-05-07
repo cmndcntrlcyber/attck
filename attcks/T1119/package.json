@@ -1,0 +1,27 @@
+{
+  "name": "attck-t1119-collect",
+  "version": "1.0.0",
+  "description": "Data collection server for T1119 exfiltration techniques",
+  "main": "collect.js",
+  "scripts": {
+    "start": "node collect.js",
+    "dev": "nodemon collect.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "data",
+    "collection",
+    "exfiltration",
+    "security"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

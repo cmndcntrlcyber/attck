@@ -1,0 +1,15 @@
+name = "cf-collect"
+main = "cf-collect.js"
+compatibility_date = "2023-11-15"
+
+# The type of worker (default is "javascript")
+type = "javascript"
+
+# Routes define which URIs trigger the worker
+# This would be configured when deployed to Cloudflare
+[triggers]
+routes = ["*example.com/collect*"]
+
+# Environment variables (customize as needed)
+[vars]
+COLLECTION_ENDPOINT = "https://attck-deploy.net/attcks/T1119/collect"
