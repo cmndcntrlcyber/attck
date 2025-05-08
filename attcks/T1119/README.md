@@ -1,4 +1,6 @@
-# T1119 Data Collection Components
+# T1119: Automated Collection
+
+## Data Collection Components
 
 This directory contains two complementary components for data collection:
 
