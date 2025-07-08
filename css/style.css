@@ -1,8 +1,11 @@
 :root {
-  --primary-blue: rgb(9, 36, 165);
+  --primary-red: rgba(165, 9, 9, 0.562);
+  --solid-red: rgb(165, 9, 9);
+  --light-red: rgba(165, 9, 9, 0.1);
+  --dark-red: rgb(140, 7, 7);
   --primary-white: rgb(255, 255, 255);
   --navbar-bg: #333;
-  --hover-blue: rgb(9, 36, 165);
+  --hover-red: var(--solid-red);
 }
 
 * {
@@ -20,7 +23,7 @@ html, body {
 body {
   background-color: var(--primary-white);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--primary-blue);
+  color: var(--solid-red);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -66,12 +69,12 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: var(--hover-blue);
+  background-color: var(--hover-red);
   transform: translateY(-1px);
 }
 
 .dropdown-menu {
-  background-color: var(--hover-blue);
+  background-color: var(--hover-red);
   border: none;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   border-radius: 8px;
@@ -120,14 +123,14 @@ body {
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: var(--hover-blue);
+  background-color: var(--hover-red);
 }
 
 .subnav-content {
   display: none;
   position: absolute;
   left: 0;
-  background-color: var(--hover-blue);
+  background-color: var(--hover-red);
   width: 100%;
   z-index: 1;
 }
@@ -151,7 +154,7 @@ body {
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--primary-blue);
+  color: var(--solid-red);
   margin-bottom: 1rem;
 }
 
@@ -159,7 +162,7 @@ h2 {
   background-color: rgba(255, 255, 255, 0.95);
   font-size: 2.25rem;
   font-weight: 600;
-  color: var(--primary-blue);
+  color: var(--solid-red);
   letter-spacing: 0.05em;
   text-align: center;
   padding: 1rem;
@@ -171,7 +174,7 @@ h3 {
   background-color: rgba(255, 255, 255, 0.95);
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--primary-blue);
+  color: var(--solid-red);
   letter-spacing: 0.05em;
   padding: 0.75rem;
   border-radius: 8px;
@@ -181,7 +184,7 @@ h3 {
 h1::after {
   content: '';
   width: 80px;
-  background: var(--primary-blue);
+  background: var(--solid-red);
   height: 4px;
   margin: 30px auto;
   display: block;
@@ -191,7 +194,7 @@ h1::after {
 p {
   font-size: 1.1rem;
   background-color: rgba(255, 255, 255, 0.95);
-  color: var(--primary-blue);
+  color: var(--solid-red);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.8;
   padding: 1rem;
@@ -236,12 +239,12 @@ img {
 /* Bootstrap container overrides */
 .container-fluid {
   background-color: transparent;
-  text-decoration-color: var(--primary-blue);
+  text-decoration-color: var(--solid-red);
 }
 
 .row {
   background-color: transparent;
-  text-decoration-color: var(--primary-blue);
+  text-decoration-color: var(--solid-red);
 }
 
 .col, [class*="col-"] {
