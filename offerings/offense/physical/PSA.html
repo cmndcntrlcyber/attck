@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical Security Assessment - ATTCK Community</title>
+    <link rel="icon" href="../../../assets/attck-favicon.png">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-blue: rgb(9, 36, 165);
+            --primary-white: rgb(255, 255, 255);
+            --navbar-bg: #333;
+            --hover-blue: rgb(9, 36, 165);
+        }
+
+        html, body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            height: auto;
+            overflow-x: hidden;
+        }
+        
+        body {
+            padding: 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        
+        .service-header {
+            background: linear-gradient(135deg, var(--primary-blue), #4a90e2);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        .service-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-header p {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-content {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            color: var(--primary-blue);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: 0.75rem;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .features-container {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-section {
+            flex: 1;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary-blue);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .feature-section h3 {
+            margin-top: 0;
+            color: var(--primary-blue);
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .pricing-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .pricing-table th {
+            background: var(--primary-blue);
+            color: white;
+            font-weight: 600;
+        }
+
+        .pricing-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .per-diem-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+
+        .per-diem-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .per-diem-table th,
+        .per-diem-table td {
+            padding: 0.75rem;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .per-diem-table th {
+            background: var(--primary-blue);
+            color: white;
+            font-weight: 600;
+        }
+
+        .travel-requirements {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .back-button:hover {
+            background: rgba(9, 36, 165, 0.8);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .features-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .service-header {
+                padding: 2rem 1rem;
+            }
+            
+            .service-header h1 {
+                font-size: 2rem;
+            }
+            
+            .service-content,
+            .pricing-section {
+                padding: 1.5rem;
+            }
+            
+            .feature-section {
+                padding: 1.5rem;
+            }
+
+            .pricing-table,
+            .per-diem-table {
+                font-size: 0.9rem;
+            }
+
+            .pricing-table th,
+            .pricing-table td,
+            .per-diem-table th,
+            .per-diem-table td {
+                padding: 0.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            body {
+                padding: 10px;
+            }
+            
+            .service-header h1 {
+                font-size: 1.75rem;
+            }
+            
+            .service-content,
+            .pricing-section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="../../../Services.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Services
+    </a>
+
+    <div class="service-header">
+        <img src="../../../assets/PSA-NO-BG.png" alt="Physical Security Assessment" class="service-icon">
+        <h1>Physical Security Assessment</h1>
+        <p>Comprehensive evaluation of physical security controls and vulnerabilities</p>
+    </div>
+
+    <div class="service-content">
+        <h2 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Overview</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+            For Small & Medium businesses: Coordinate a "secret shopper" experience to evaluate the physical, RFID, Bluetooth, & WiFi security controls at any branch/franchise location or within your commercial transport operations.
+        </p>
+
+        <div class="features-container">
+            <div class="feature-section">
+                <h3>Assessment Areas</h3>
+                <ul class="feature-list">
+                    <li>Physical perimeter security evaluation</li>
+                    <li>Access control system testing</li>
+                    <li>RFID security assessment</li>
+                    <li>Bluetooth vulnerability analysis</li>
+                    <li>WiFi security evaluation</li>
+                    <li>Social engineering resistance testing</li>
+                    <li>Security procedure compliance review</li>
+                </ul>
+            </div>
+
+            <div class="feature-section">
+                <h3>Deliverables</h3>
+                <ul class="feature-list">
+                    <li>Comprehensive vulnerability report</li>
+                    <li>Risk assessment and ratings</li>
+                    <li>Detailed remediation recommendations</li>
+                    <li>Security policy review</li>
+                    <li>Implementation timeline</li>
+                    <li>Executive summary presentation</li>
+                    <li>Follow-up consultation session</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing-section">
+        <h2 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Pricing Structure</h2>
+        
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Business Scale</th>
+                    <th>Base Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Small Business</td>
+                    <td>$2,500</td>
+                </tr>
+                <tr>
+                    <td>Medium Business</td>
+                    <td>$5,000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="per-diem-section">
+            <h3 style="color: var(--primary-blue); margin-bottom: 1rem;">Per-Diem Expenses</h3>
+            <table class="per-diem-table">
+                <thead>
+                    <tr>
+                        <th>Food (Per Day)</th>
+                        <th>Lodging (Per Day)</th>
+                        <th>Transportation (Round-Trip)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>$75</td>
+                        <td>$200</td>
+                        <td>$1,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="travel-requirements">
+            <strong>Travel Requirements:</strong><br>
+            Travel Requirements for the Operator are the following: Business-Class Flight, Hotel, and pre-arranged transportation (i.e. rental). Per-Diem Travel expense reimbursement solutions must be resolved prior to operator engagement.
+        </div>
+    </div>
+
+    <div class="service-content">
+        <h2 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Why Choose Our Physical Security Assessment?</h2>
+        <div class="features-container">
+            <div class="feature-section">
+                <h3>Expert Methodology</h3>
+                <p>Our assessments follow industry-standard methodologies combined with real-world attack scenarios to provide comprehensive security evaluation.</p>
+            </div>
+            <div class="feature-section">
+                <h3>Actionable Results</h3>
+                <p>Receive detailed, prioritized recommendations with clear implementation steps to improve your physical security posture.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

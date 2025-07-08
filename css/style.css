@@ -1,176 +1,343 @@
-
-container-fluid {
-    background-color: rgb(160, 0, 0);
-    text-decoration-color: black;   
+:root {
+  --primary-blue: rgb(9, 36, 165);
+  --primary-white: rgb(255, 255, 255);
+  --navbar-bg: #333;
+  --hover-blue: rgb(9, 36, 165);
 }
-
-row {
-    background-color: black;
-    text-decoration-color: rgb(160, 0, 0);
-}
-
-col {
-    background-color: rgb(160, 0, 0); 
-    height:max-content;
-    text-align: left;
-}
-
-/*css*/
-/* particleground demo */
 
 * {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  background-color: var(--primary-white);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--primary-blue);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#particles {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#main {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  padding: 5%;
+  width: 90%;
+  text-align: center;
+  scroll-behavior: auto;
+}
+
+/* Modern Navigation */
+.modern-navbar {
+  background-color: var(--navbar-bg);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  padding: 0.75rem 1rem !important;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: var(--hover-blue);
+  transform: translateY(-1px);
+}
+
+.dropdown-menu {
+  background-color: var(--hover-blue);
+  border: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255,255,255,0.1);
+  color: white !important;
+}
+
+/* Legacy navbar styles for compatibility */
+.navbar {
+  overflow: visible;
+  background-color: var(--navbar-bg);
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: var(--hover-blue);
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: var(--hover-blue);
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  background-color: rgba(255, 255, 255, 0.95);
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  background-color: rgba(255, 255, 255, 0.95);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  letter-spacing: 0.05em;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+h1::after {
+  content: '';
+  width: 80px;
+  background: var(--primary-blue);
+  height: 4px;
+  margin: 30px auto;
+  display: block;
+  border-radius: 2px;
+}
+
+p {
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--primary-blue);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 60%;
+  height: auto;
+  width: auto;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+/* Cards and Content */
+.content-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.sidebar-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Bootstrap container overrides */
+.container-fluid {
+  background-color: transparent;
+  text-decoration-color: var(--primary-blue);
+}
+
+.row {
+  background-color: transparent;
+  text-decoration-color: var(--primary-blue);
+}
+
+.col, [class*="col-"] {
+  background-color: transparent;
+  height: max-content;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 2rem;
   }
   
-  html, body {
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  body {
-    background: rgb(255, 255, 255);
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    line-height: 1.3;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  #particles {
-    width: 100%;
-    height: 100%;
-    position:sticky;
-  }
-  
-  #main {
-    position: absolute;
-    left: 0;
-    top: 75%;
-    padding: 0;
-    width: 100%;
-    overflow:auto;
-    text-align: center;
-    scroll-behavior: auto;
-  }
   h2 {
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: 120;
-    color: #000000;
-    letter-spacing: 0.05em;
+    font-size: 1.75rem;
   }
+  
+  img {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #main {
+    top: 20%;
+    padding: 2%;
+    width: 96%;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
   h1::after {
-    content: '';
-    width: 80px;
-    background: #fff;
-    height: 10px;
-    margin: 30px auto;
-    line-height: 1.1;
+    height: 3px;
+    width: 60px;
   }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
   p {
-    margin: 0 0 30px 0;
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
   }
   
-  @media only screen and (max-width: 1000px) {
-    h1 {
-      font-size: 15px;
-    }
+  img {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #main {
+    padding: 1%;
+    width: 98%;
   }
   
-  @media only screen and (max-width: 100px) {
-    h1 {
-      font-size: 15px;
-    }
-    h1::after {
-      height: 8px;
-    }
+  h1 {
+    font-size: 1.25rem;
   }
   
-  @media only screen and (max-width: 100px) {
-    #intro {
-      padding: 0;
-    }
-    h1 {
-      font-size: 15px;
-    }
-    h1::after {
-      height: 6px;
-    }
-    p {
-      font-size: 18px;
-    }
-    .btn {
-      font-size: 16px;
-    }
+  h1::after {
+    height: 2px;
+    width: 40px;
   }
   
-  @media only screen and (max-width: 100px) {
-    h1 {
-      font-size: 15px;
-    }
-    h1::after {
-      height: 4px;
-    }
+  h2 {
+    font-size: 1.25rem;
   }
   
-  .navbar {
-    overflow: hidden;
-    background-color: #333; 
+  h3 {
+    font-size: 1.1rem;
   }
   
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  p {
+    font-size: 0.9rem;
   }
-  
-  .subnav {
-    float: left;
-    overflow: hidden;
+}
+
+/* Animation for cards */
+.content-card, .sidebar-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  
-  .subnav .subnavbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .navbar a:hover, .subnav:hover .subnavbtn {
-      background-color: rgb(160, 0, 0);
-  }
-  
-  .subnav-content {
-    display: none;
-    position: absolute;
-    left: 0;
-      background-color: rgb(160, 0, 0);
-    width: 100%;
-    z-index: 1;
-  }
-  
-  .subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-  }
-  
-  .subnav:hover .subnav-content {
-    display: block;
-  }
+}
